@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will not show initially.
+  </div>
+  <script>
+    //Incorrect way to use innerHTML when the div is empty at the beginning.
+    document.getElementById("myDiv").innerHTML = "<p>This text will show.</p>";
+  </script>
+</body>
+</html>
